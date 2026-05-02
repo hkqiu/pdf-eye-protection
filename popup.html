@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <div class="header">
+      <span class="title">PDF 护眼模式</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <span class="label">自动启用</span>
+        <label class="switch small">
+          <input type="checkbox" id="autoToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="label">护眼模式</div>
+      <select id="modeSelect">
+        <option value="warm">暖色调</option>
+        <option value="kraft">牛皮纸</option>
+        <option value="dark">深色模式</option>
+        <option value="green">豆沙绿</option>
+      </select>
+    </div>
+
+    <div class="preview" id="preview">暖色调</div>
+    <div class="status" id="status">已启用</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
